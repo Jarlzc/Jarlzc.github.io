@@ -1,0 +1,18 @@
+body {
+    margin:0 ;
+}
+
+.bg-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/assets/images/cloudhero.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+
+}
+
+.jumbotron {
+    background:transparent;
+}
