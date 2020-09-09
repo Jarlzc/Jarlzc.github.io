@@ -124,7 +124,7 @@ body {
     color: #003049;
 }
 
-}
+
 
 .service-box > h3 {
     margin-top: 20px;
@@ -164,10 +164,7 @@ body {
       display: none;
   }
 
-  .hello {
-    opacity: 1 !important;
-  }
-
+/* gallery */
   .gallery {
     display: flex;
     justify-content: center;
