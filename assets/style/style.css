@@ -1,5 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin:0 ;
+
 }
 
 .bg-container {
@@ -53,7 +58,7 @@ body {
     color: #003049 !important;
 }
 
-
+/* welcome  */
 
 .jumbotron {
     background:transparent;
@@ -64,10 +69,15 @@ body {
     width: 67%;
     margin-top: 100px;
 }
+.display-4 {
+  font-family: 'Noto Sans TC', sans-serif;
+}
 
 .lead {
     margin-top: 20px;
     color: #eae2b7;
+    
+    font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -104,13 +114,16 @@ body {
 .heroh {
     margin: 77px auto;
 }
+.heroh2 {
+  margin: 77px auto;
+  color: #eae2b7 ;
+
+}
 
 .col-md-5 {
     color: #003049;
 }
-.col-md-7 {
-    color: #eae2b7;
-    
+
 }
 
 .service-box > h3 {
@@ -146,6 +159,7 @@ body {
     text-decoration: none;
   }
 
+/* hidden div */
   .creative {
       display: none;
   }
@@ -153,43 +167,17 @@ body {
   .hello {
     opacity: 1 !important;
   }
-  .full {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
-  .full .content {
-    background-color: rgba(0,0,0,0.75) !important;
-    height: 100%;
-    width: 100%;
-    display: grid;
-  }
-  .full .content img {
-    left: 50%;
-    transform: translate3d(0, 0, 0);
-    animation: zoomin 1s ease;
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto;
-  }
-  .byebye {
-    opacity: 0;
-  }
-  .byebye:hover {
-    transform: scale(0.2) !important;
-  }
+
   .gallery {
-    display: grid;
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    grid-column-gap: 18px;
+
   }
   .gallery img {
-    max-width: 100%;
+    width: 100%;
+    min-width: 70%;
     border-radius: 8px;
     box-shadow: 0 0 16px #333;
     transition: all 1.5s ease;
@@ -200,6 +188,11 @@ body {
   .gallery .content {
     padding: 4px;
   }
+  
+  .gallery-item4 {
+    margin-right: 1px;
+  }
+  
   .gallery .gallery-item {
     transition: grid-row-start 300ms linear;
     transition: transform 300ms ease;
@@ -209,98 +202,11 @@ body {
   .gallery .gallery-item:hover {
     transform: scale(1.025);
   }
-  @media (max-width: 600px) {
-    .gallery {
-      grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-    }
-  }
-  @media (max-width: 400px) {
-    .gallery {
-      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-    }
-  }
-  @-moz-keyframes zoomin {
-    0% {
-      max-width: 50%;
-      transform: rotate(-30deg);
-      filter: blur(4px);
-    }
-    30% {
-      filter: blur(4px);
-      transform: rotate(-80deg);
-    }
-    70% {
-      max-width: 50%;
-      transform: rotate(45deg);
-    }
-    100% {
-      max-width: 100%;
-      transform: rotate(0deg);
-    }
-  }
-  @-webkit-keyframes zoomin {
-    0% {
-      max-width: 50%;
-      transform: rotate(-30deg);
-      filter: blur(4px);
-    }
-    30% {
-      filter: blur(4px);
-      transform: rotate(-80deg);
-    }
-    70% {
-      max-width: 50%;
-      transform: rotate(45deg);
-    }
-    100% {
-      max-width: 100%;
-      transform: rotate(0deg);
-    }
-  }
-  @-o-keyframes zoomin {
-    0% {
-      max-width: 50%;
-      transform: rotate(-30deg);
-      filter: blur(4px);
-    }
-    30% {
-      filter: blur(4px);
-      transform: rotate(-80deg);
-    }
-    70% {
-      max-width: 50%;
-      transform: rotate(45deg);
-    }
-    100% {
-      max-width: 100%;
-      transform: rotate(0deg);
-    }
-  }
-  @keyframes zoomin {
-    0% {
-      max-width: 50%;
-      transform: rotate(-30deg);
-      filter: blur(4px);
-    }
-    30% {
-      filter: blur(4px);
-      transform: rotate(-80deg);
-    }
-    70% {
-      max-width: 50%;
-      transform: rotate(45deg);
-    }
-    100% {
-      max-width: 100%;
-      transform: rotate(0deg);
-    }
-  }
 
 
-
-
-  .fa {
+   .fa {
       color: #003049 !important;
+      
   }
 
   .contactme {
@@ -309,10 +215,21 @@ body {
       background-position: center;
       color: whitesmoke;
   }
-  
-  .fa-linkedin:before, .fa-github-square:before {
-      font-size: 90px;
+
+  .contactmej {
+    padding: 0;
   }
+  
+  .contactme a {
+    color: whitesmoke;
+    margin: 20px 30px;
+  }
+
+  .fab:hover{color:lightblue;} 
+  .fas:hover{color:lightblue;} 
+
+  
+
 
   hr {
       width: 10%;
@@ -321,4 +238,20 @@ body {
       color: #a12a31;
       background-color: #a12a31;
 
+  }
+
+
+
+  .footer .container {
+    padding-top: 22px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .card {
+      max-width: 90%;
+    }
+    .heroh {
+      width: 70%;
+      margin: 77px 0px;
+    }
   }
