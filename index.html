@@ -9,6 +9,9 @@
   <script src="https://kit.fontawesome.com/7a9ff9c953.js" crossorigin="anonymous"></script>
   <!-- googlefont -->
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <!-- lightbox -->
+  <link rel="stylesheet" href="assets/style/lightbox.min.css" type="text/css">
+
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -138,30 +141,36 @@
   </div>
   <div class="container-fluid pl-0 pr-0 mt-3 mb-5">
     <div class="gallery" id="gallery">
-      <div class="gallery-item">
-        <div class="content"><img src="https://source.unsplash.com/random/?tech,care" alt=""></div>
+
+      <div class="gallery-item col-lg-3 col-md-6">
+        <div class="content"><a href="/assets/photo/trafficlight.JPG" data-lightbox="mygallery"><img
+              src="/assets/photo/trafficlight.JPG" alt=""></div></a>
       </div>
-      <div class="gallery-item">
-        <div class="content"><img src="https://source.unsplash.com/random/?tech,studied" alt=""></div>
+      <div class="gallery-item col-lg-3 col-md-6">
+        <a href="/assets/photo/guitar.JPG" data-lightbox="mygallery"><img src="/assets/photo/guitar.JPG" alt=""></a>
       </div>
-      <div class="gallery-item">
-        <div class="content"><img src="https://source.unsplash.com/random/?tech,substance" alt=""></div>
+
+      <div class="gallery-item col-lg-3 col-md-6">
+        <div class="content"><a href="/assets/photo/pier.JPG" data-lightbox="mygallery"><img
+              src="/assets/photo/pier.JPG" alt=""></div></a>
       </div>
-      <div class="gallery-item">
-        <div class="content"><img src="https://source.unsplash.com/random/?tech,choose" alt=""></div>
+      <div class="gallery-item col-lg-3 col-md-6">
+        <div class="content"><a href="/assets/photo/skyline.JPG" data-lightbox="mygallery"><img
+              src="/assets/photo/skyline.JPG" alt=""></div></a>
       </div>
 
     </div>
     <div class="contactmej jumbotron jumbotron-fluid" id="contact">
-    <div class="contactme container-fluid text-center">
-      <div class="container pt-3 pb-5">
-        <h3> Connect with me</h3>
-        <hr>
-        </br>
-        <a class="effect4" href="https://www.linkedin.com/in/charles-choi-b578351b2/"><i class="fab fa-4x fa-linkedin"></i></a><a
-          href="mailto:charlesc.inbox@gmail.com"><i class="fas fa-4x fa-envelope-open-text"></i></a> <a href="https://github.com/Jarlzc"><i
-            class="fab fa-4x fa-github-square"></i></a>
-      </div>
+      <div class="contactme container-fluid text-center">
+        <div class="container pt-3 pb-5">
+          <h3> Connect with me</h3>
+          <hr>
+          </br>
+          <a class="effect4" href="https://www.linkedin.com/in/charles-choi-b578351b2/"><i
+              class="fab fa-4x fa-linkedin"></i></a><a href="mailto:charlesc.inbox@gmail.com"><i
+              class="fas fa-4x fa-envelope-open-text"></i></a> <a href="https://github.com/Jarlzc"><i
+              class="fab fa-4x fa-github-square"></i></a>
+        </div>
       </div>
     </div>
 
@@ -175,6 +184,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
+    <script type="text/javascript" src="assets/script/lightbox-plus-jquery.min.js"></script>
     <script src="/assets/script/javascript.js"></script>
 
 
